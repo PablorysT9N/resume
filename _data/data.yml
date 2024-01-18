@@ -10,7 +10,7 @@ contact:
   location: Quebec, Canada # location
   email: pabloryst9n@gmail.com    # email address
   phone: +1-438-833-1642 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: https://pabloryst9n.github.io/resume/     # site URL without schema, like example.com, will automatically prepand "https://"
+  website:      # site URL without schema, like example.com, will automatically prepand "https://"
 
   gender:                  # gender or pronoun
   birthday:                # birthday
@@ -20,7 +20,7 @@ contact:
 
   # contact
   wechat: Pabloryst9n                  # username
-  whatsapp: +14388331642               # 8611122223333     | https://wa.me/+14388331642
+  whatsapp:                # 8611122223333     | https://wa.me/+14388331642
   telegram:                # username          | https://t.me/username
   messenger:               # username          | https://m.me/username
   line:                    # lineid            | https://line.me/R/ti/p/@lineid
@@ -59,7 +59,7 @@ contact:
   artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin:   Pabloryst9n             # username          | https://linkedin.com/in/Pabloryst9n
+  linkedin:                # username          | https://linkedin.com/in/Pabloryst9n
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
