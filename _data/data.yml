@@ -64,8 +64,8 @@ experience:
   show: true
   order: 2
   title: Experiencia Laboral
-  description: #|
-  #  The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
+  description: |
+    # The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
 
   items:
     - company: Traductor independiente
@@ -86,8 +86,8 @@ experience:
       role: Revisor y editor de español
       location: Remoto
       description: |
-      Pocisionamiento, optimización y correción de los elementos TDK para artículos publicados en sitios web especializados
-      en el comercio B2B 
+        Pocisionamiento, optimización y corrección de los elementos TDK para artículos publicados en sitios web especializados
+        en el comercio B2B 
 
     - company: Verbolabs Languages OPC PvT LTD
       link: 'https://www.verbolabs.com/'
@@ -96,8 +96,8 @@ experience:
       role: Traductor y revisor de lenguas romances
       location: Remoto
       description: |
-      Servicios de los idiomas español, francés e italiano para compañías de la India y otros
-      países del continente asiático  
+        Servicios de los idiomas español, francés e italiano para compañías de la India y otros
+        países del continente asiático  
 
     - company: Jaap van Adelberg Dievelaar Traductor e Intérprete público 
       link:
@@ -106,11 +106,10 @@ experience:
       role: Traductor y revisor de español
       location: Venezuela
       description: |
-        Documentos de caracter civil, mercantil y educativo, dirigidos en su mayoría a entes públicos nacionales e internacionales 
+        Documentos de carácter civil, mercantil y educativo, dirigidos en su mayoría a entes públicos nacionales e internacionales 
         + Gestión de proyecto
         + Gestión de base de datos
         + Procesamiento de documentos
-
 project:
   show: false
   order: 3
