@@ -1,1 +1,7 @@
-<svg role="img" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>proz</title><path d="m10.5107827 23.5454545v-12.090909h14.6363637s3.5.9545454 3.5 4.4545454-3.5 3.8181818-3.5 3.8181818h-18.78351004"/></svg>
+<svg height="37" viewBox="0 0 37 37" width="37" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+<circle cx="17.5" cy="17.5" fill="#366" r="17.5" stroke="#f5f5f5"/>
+<title>proz</title>
+<path d="m10.5107827 23.5454545v-12.090909h14.6363637s3.5.9545454 3.5 4.4545454-3.5 3.8181818-3.5 3.8181818h-18.78351004" stroke="#f4f4f4"/>
+    </g>
+</svg>
