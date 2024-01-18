@@ -81,7 +81,7 @@ experience:
 
     - company: Clearly Local, Ltd.
       link: 'https://www.clearlyloc.com/'
-      tags: #
+      #tags:
       date: dic 2023 - actualidad 
       role: Revisor y editor de español
       location: Remoto
