@@ -71,12 +71,14 @@
   </div>
   {%- endif %}
 
-  {%- if contact.whatsapp %}
+  {%- if false -%}
   <div class="contact-item" title="whatsapp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">{{ contact.whatsapp }}</a>
+    <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
   </div>
-  {%- endif %}
+  {%- endif -%}
+
   
   {%- if contact.telegram %}
   <div class="contact-item" title="telegram">
