@@ -55,7 +55,7 @@ profile:
   order: 1
   title: Resumen
   description: 
-    Siempre interesado en proyectos de caracter tecnológico, computacional y recreativo. Lo que me motiva es la idea de la globalización de un proyecto que alcance consumidores no previstos fuera de fronteras.
+    Siempre interesado en proyectos de caracter tecnológico, computacional y recreativo. Lo que me motiva es la idea de la globalización de un proyecto, que alcance un público fuera de las fronteras.
     El español internacional es mi especialidad y el idioma con que le puedo sumar valor, de igual manera, poseo otras habilidades lingüisticas que me permiten tener una percepción general y no limitativa a un solo idioma.
     Me considero autodidacta motivado a mi inquietud de seguir aprendido y seguirle el paso a las novedades que día a día surgen.
    
@@ -63,35 +63,56 @@ profile:
 experience:
   show: true
   order: 2
-  title: Experiences
-  description: |
-    The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
+  title: Experiencia laboral
+  #description: |
+    #The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
 
   items:
-    - company: Second Company
-      link: '#'
-      tags: Full-time
-      date: 2018.03 - 2019.03
-      role: Backend Developer
-      location: Beijing
+    - company: Traductor independiente
+      #link: '#'
+      #tags: Full-time
+      date: 2018 - actualidad
+      role: Traductor y revisor
+      #location:
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        Servios a empresas e individuos cuyos proyectos quieren hacer llegar al público de habla hispana,
+        proyectos de distintos temas como: literal, legal, y software y computadoras.
+        Servicios para compañías de traducción y localización como tercero
 
-    - company: First Company
-      link:
-      tags: Part-time, remote
-      date: 2017.03 - 2018.03
-      role: Backend Developer
-      location: Beijing
+- company: Clearly Local, Ltd.
+      link: 'https://www.clearlyloc.com/'
+      #tags: Full-time
+      date: dic 2023 - actualidad 
+      role: Revisor y editor de español
+      #location:
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+      Pocisionamiento, optimización y correción de los elementos TDK para artículos publicados en sitios web especializados
+      en el comercio B2B 
+
+    - company: Verbolabs Languages OPC PvT LTD
+      link: 'https://www.verbolabs.com/'
+      #tags: Full-time
+      date: nov 2022 - actualidad 
+      role: Traductor y revisor de lenguas romances
+      #location:
+      description: |
+      Servicios de los idiomas español, francés e italiano para compañías de la India y otros
+      países del continente asiático  
+
+    - company: Jaap van Adelberg Dievelaar Traductor e Intérprete público 
+      #link:
+      tags: Tiempo completo
+      date:  mar 2018 - oct 2019
+      role: Traductor y revisor de español
+      location: Venezuela
+      description: |
+        Documentos de caracter civil, mercantil y educativo, dirigidos en su mayoría a entes públicos nacionales e internacionales 
+        + Gestión de proyecto
+        + Gestión de base de datos
+        + Procesamiento de documentos
 
 project:
-  show: true
+  show: false
   order: 3
   title: Projects
   description: |
@@ -121,7 +142,7 @@ project:
         + Second
 
 skill:
-  show: true
+  show: false
   order: 4
   title: Skills
   description: |
@@ -171,7 +192,7 @@ skill:
         - Skill I
 
 education:
-  show: true
+  show: false
   order: 5
   title: Education
   description: |
@@ -201,7 +222,7 @@ education:
         + Second
 
 certificate:
-  show: true
+  show: false
   order: 6
   title: Certificates
   description: |
@@ -228,7 +249,7 @@ certificate:
         It's my Example Certificate Two by Example.
 
 publication:
-  show: true
+  show: false
   order: 7
   title: Publications
   description: |
@@ -251,7 +272,7 @@ publication:
       link:
 
 award:
-  show: true
+  show: false
   order: 8
   title: Awards
   description: |
@@ -276,7 +297,7 @@ award:
         It's my Example Awared Two by Example.
 
 patent:
-  show: true
+  show: false
   order: 9
   title: Patents
   description: |
@@ -300,7 +321,7 @@ patent:
     + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
 
 organization:
-  show: true
+  show: false
   order: 10
   title: Organizations
   description: |
@@ -314,19 +335,23 @@ language:
   show: true
   order: 11
   title: Languages
-  description: |
-    The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
+  #description: |
+  #  The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
 
-    It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
+  #  It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
 
   items:
-    - idiom: Chinese
-      level: Native
-    - idiom: English
-      level: Professional
+    - idiom: Español
+      level: Nativo
+    - idiom: Inglés
+      level: Avanzado
+    - idiom: Francés
+      level: Avanzado 
+    - idiom: Italiano
+      level: Intermedio
 
 interest:
-  show: true
+  show: false
   order: 12
   title: Interests
   description: |
@@ -343,7 +368,7 @@ interest:
       link:
 
 evaluation:
-  show: true
+  show: false
   order: 13
   title: Self-evaluation
   description: |
@@ -354,7 +379,7 @@ evaluation:
     A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
 
 reference:
-  show: true
+  show: false
   order: 14
   title: References
   description: |
