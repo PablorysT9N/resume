@@ -2,7 +2,7 @@ basic:
   name: Pablo Reyes                      # name
   title: Translator | Localizer | IT | Software           # job title
   avatar:
-    show: false                       # show or hide avatar
+    show: true                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
@@ -112,7 +112,7 @@ experience:
         + Procesamiento de documentos
 
 project:
-  show: false
+  show: true
   order: 3
   title: Projects
   description: |
@@ -142,7 +142,7 @@ project:
         + Second
 
 skill:
-  show: false
+  show: true
   order: 4
   title: Skills
   description: |
@@ -192,7 +192,7 @@ skill:
         - Skill I
 
 education:
-  show: false
+  show: true
   order: 5
   title: Education
   description: |
@@ -222,7 +222,7 @@ education:
         + Second
 
 certificate:
-  show: false
+  show: true
   order: 6
   title: Certificates
   description: |
@@ -249,7 +249,7 @@ certificate:
         It's my Example Certificate Two by Example.
 
 publication:
-  show: false
+  show: true
   order: 7
   title: Publications
   description: |
@@ -272,7 +272,7 @@ publication:
       link:
 
 award:
-  show: false
+  show: true
   order: 8
   title: Awards
   description: |
@@ -297,7 +297,7 @@ award:
         It's my Example Awared Two by Example.
 
 patent:
-  show: false
+  show: true
   order: 9
   title: Patents
   description: |
@@ -351,7 +351,7 @@ language:
       level: Intermedio
 
 interest:
-  show: false
+  show: true
   order: 12
   title: Interests
   description: |
@@ -368,7 +368,7 @@ interest:
       link:
 
 evaluation:
-  show: false
+  show: true
   order: 13
   title: Self-evaluation
   description: |
@@ -379,7 +379,7 @@ evaluation:
     A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
 
 reference:
-  show: false
+  show: true
   order: 14
   title: References
   description: |
