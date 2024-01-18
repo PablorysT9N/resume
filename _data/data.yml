@@ -321,7 +321,7 @@ patent:
     + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
 
 organization:
-  show: false
+  show: true
   order: 10
   title: Organizations
   description: |
