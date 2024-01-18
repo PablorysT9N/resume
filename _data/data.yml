@@ -7,9 +7,9 @@ basic:
 
 contact:
   # meta
-  location: Quebec, Canada # location
+  location: Quebec # location
   email: pabloryst9n@gmail.com    # email address
-  phone: +1-438-833-1642 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  phone: +1 438 833 1642 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
   website:      # site URL without schema, like example.com, will automatically prepand "https://"
 
   gender:                  # gender or pronoun
@@ -43,13 +43,14 @@ contact:
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
   freelancer:              # username          | https://www.freelancer.com/u/username
-
+  proz: 2517125            # number user       | https://www.proz.com/translator/2517125
+  
   # social media
   twitter:                 # username          | https://twitter.com/username
   mastodon:                # username@server
   instagram:               # username          | https://instagram.com/username
   youtube:                 # username          | https://www.youtube.com/@username
-  
+
 profile:
   show: true
   order: 1
