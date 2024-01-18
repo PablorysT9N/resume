@@ -23,41 +23,20 @@ contact:
   whatsapp:                # 8611122223333     | https://wa.me/+14388331642
   telegram:                # username          | https://t.me/username
   messenger:               # username          | https://m.me/username
-  line:                    # lineid            | https://line.me/R/ti/p/@lineid
-  viber:                   # username          | https://vb.me/username
-  threema:                 # userid            | https://threema.id/userid
-
+  
   # programmer
   github:                  # username          | https://github.com/username
   gitlab:                  # username          | https://gitlab.com/username
-  bitbucket:               # username          | https://bitbucket.com/username
-  stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
-  leetcode:                # username          | https://leetcode.com/username
-  codeforces:              # username          | https://codeforces.com/profile/username
-  codewars:                # username          | https://www.codewars.com/users/username
-  codepen:                 # username          | https://codepen.io/username
-  tryhackme:               # username          | https://tryhackme.com/p/username
-
+ 
   # academic
-  googlescholar:           # username          | https://scholar.google.com/citations?user=username
-  researchgate:            # username          | https://www.researchgate.net/profile/username
-  kaggle:                  # username          | https://www.kaggle.com/username
-  orcid:                   # id                | https://orcid.org/id
-  figshare:                # name/id           | https://figshare.com/authors/name/id
-
+ 
   # writer
-  devto:                   # username          | https://dev.to/username
-  medium:                  # username          | https://medium.com/@username
   wordpress:               # username          | https://username.wordpress.com
   blogger:                 # username          | https://username.blogspot.com
   wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
 
   # designer
-  figma:                   # username          | https://www.figma.com/@username
-  behance:                 # username          | https://www.behance.net/username
-  dribble:                 # username          | https://dribbble.com/username
-  artstation:              # username          | https://www.artstation.com/username
-
+  
   # other cv
   linkedin:                # username          | https://linkedin.com/in/Pabloryst9n
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
@@ -69,23 +48,17 @@ contact:
   twitter:                 # username          | https://twitter.com/username
   mastodon:                # username@server
   instagram:               # username          | https://instagram.com/username
-  unsplash:                # username          | https://unsplash.com/@username
-  _500px:                  # username          | https://500px.com/p/username
   youtube:                 # username          | https://www.youtube.com/@username
-  tiktok:                  # username          | https://www.tiktok.com/@username
-  quora:                   # username          | https://www.quora.com/profile/username
-  zhihu:                   # username          | https://www.zhihu.com/people/username
-  goodreads:               # username          | https://www.goodreads.com/user/show/username
-  strava:                  # useid             | https://www.strava.com/athletes/userid
-
+  
 profile:
   show: true
   order: 1
-  title: Profile
-  description: |
-    The profile section in a resume is a brief summary of the applicant's skills, qualifications, and experience. The purpose of this section is to provide a snapshot of the applicant's professional background and highlight their most relevant accomplishments and strengths. It may include information such as the applicant's career objectives, years of experience, areas of expertise, and key achievements.
-
-    A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
+  title: Resumen
+  description: 
+    Siempre interesado en proyectos de caracter tecnológico, computacional y recreativo. Lo que me motiva es la idea de la globalización de un proyecto que alcance consumidores no previstos fuera de fronteras.
+    El español internacional es mi especialidad y el idioma con que le puedo sumar valor, de igual manera, poseo otras habilidades lingüisticas que me permiten tener una percepción general y no limitativa a un solo idioma.
+    Me considero autodidacta motivado a mi inquietud de seguir aprendido y seguirle el paso a las novedades que día a día surgen.
+   
 
 experience:
   show: true
