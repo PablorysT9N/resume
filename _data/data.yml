@@ -2,7 +2,7 @@ basic:
   name: Pablo Reyes                      # name
   title: Translator | Localizer | IT | Software           # job title
   avatar:
-    show: true                       # show or hide avatar
+    show: false                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
@@ -69,8 +69,8 @@ experience:
 
   items:
     - company: Traductor independiente
-      link: #'#'
-      tags: #Full-time
+      link: 
+      tags: 
       date: 2018 - actualidad
       role: Traductor y revisor
       location:
@@ -81,7 +81,7 @@ experience:
 
 - company: Clearly Local, Ltd.
       link: 'https://www.clearlyloc.com/'
-      tags: #Full-time
+      tags: 
       date: dic 2023 - actualidad 
       role: Revisor y editor de español
       location: Remoto
@@ -91,7 +91,7 @@ experience:
 
     - company: Verbolabs Languages OPC PvT LTD
       link: 'https://www.verbolabs.com/'
-      tags: #Full-time
+      tags: 
       date: nov 2022 - actualidad 
       role: Traductor y revisor de lenguas romances
       location: Remoto
