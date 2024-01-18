@@ -1,13 +1,13 @@
 basic:
   name: Pablo Reyes                      # name
-  title: Translator           # job title
+  title: Translator| Localizer | IT | Software           # job title
   avatar:
     show: false                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
   # meta
-  location: Quebec, Canad # location
+  location: Quebec, Canada # location
   email: pabloryst9n@gmail.com    # email address
   phone: +1-438-833-1642 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
   website: https://pabloryst9n.github.io/resume/     # site URL without schema, like example.com, will automatically prepand "https://"
@@ -19,8 +19,8 @@ contact:
   drivinglicense:          # driving licence
 
   # contact
-  wechat:                  # username
-  whatsapp:                # 8611122223333     | https://wa.me/8611122223333
+  wechat: Pabloryst9n                  # username
+  whatsapp: +14388331642               # 8611122223333     | https://wa.me/+14388331642
   telegram:                # username          | https://t.me/username
   messenger:               # username          | https://m.me/username
   line:                    # lineid            | https://line.me/R/ti/p/@lineid
@@ -59,7 +59,7 @@ contact:
   artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin:                # username          | https://linkedin.com/in/username
+  linkedin:   Pabloryst9n             # username          | https://linkedin.com/in/Pabloryst9n
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
