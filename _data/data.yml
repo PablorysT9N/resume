@@ -42,7 +42,7 @@ contact:
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
-  freelancer:              # username          | https://www.freelancer.com/u/username
+  freelancer: pablorys             # username          | https://www.freelancer.com/u/username
   proz: 2517125            # number user       | https://www.proz.com/translator/2517125
   
   # social media
