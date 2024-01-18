@@ -209,6 +209,11 @@ small {
             margin: 0 0.5em;
           }
 
+          i {
+            font-size: 20px;
+            color: rgba(145, 73, 0, 0.589);
+          } 
+
           i::after {
             content: "\00a0";
             font-family: initial;
