@@ -1,6 +1,6 @@
 basic:
   name: Pablo Reyes                      # name
-  title: Translator| Localizer | IT | Software           # job title
+  title: Translator | Localizer | IT | Software           # job title
   avatar:
     show: false                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
