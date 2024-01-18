@@ -330,7 +330,7 @@ language:
       level: Intermedio
 
 interest:
-  show: true
+  show: false
   order: 12
   title: Interests
   description: |
