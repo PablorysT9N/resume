@@ -19,7 +19,7 @@ contact:
   drivinglicense:          # driving licence
 
   # contact
-  wechat: Pabloryst9n                  # username
+  wechat:                   # username
   whatsapp: +14388331642               # 8611122223333     | https://wa.me/+14388331642
   telegram:                # username          | https://t.me/username
   messenger:               # username          | https://m.me/username
@@ -74,7 +74,7 @@ experience:
       tags: 
       date: 2018 - actualidad
       role: Traductor y revisor
-      #location:
+      location:
       description: |
         Servios a empresas e individuos cuyos proyectos quieren hacer llegar al público de habla hispana,
         proyectos de distintos temas como: literal, legal, y software y computadoras.
@@ -112,10 +112,10 @@ experience:
         + Gestión de base de datos
         + Procesamiento de documentos
 project:
-  show: false
+  show: true
   order: 3
   title: Projects
-  description: |
+  #description: #|
     The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
 
     In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
