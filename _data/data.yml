@@ -54,11 +54,11 @@ contact:
 profile:
   show: true
   order: 1
-  title: Resumen
+  title: Sobre mí
   description: 
-    Siempre interesado en proyectos de caracter tecnológico, computacional y recreativo. Lo que me motiva es la idea de la globalización de un proyecto, que alcance un público fuera de las fronteras.
-    El español internacional es mi especialidad y el idioma con que le puedo sumar valor, de igual manera, poseo otras habilidades lingüisticas que me permiten tener una percepción general y no limitativa a un solo idioma.
-    Me considero autodidacta motivado a mi inquietud de seguir aprendido y seguirle el paso a las novedades que día a día surgen.
+    Siempre interesado en proyectos de caracter tecnológico, computacional y recreativo. Lo que me motiva es la idea de la globalización de un proyecto, que alcance un público fuera de sus fronteras.
+    El español internacional es mi especialidad, de igual manera, poseo otras habilidades lingüisticas que me permiten tener una percepción general y no limitativa a un solo idioma.
+    Me considero autodidacta, motivado a mi inquietud de seguir aprendiendo y mantener el paso con las novedades que día a día surgen.
    
 
 experience:
@@ -90,15 +90,15 @@ experience:
         Pocisionamiento, optimización y corrección de los elementos TDK para artículos publicados en sitios web especializados
         en el comercio B2B 
 
-    - company: Verbolabs Languages OPC PvT LTD
-      link: 'https://www.verbolabs.com/'
+    - company: #Verbolabs Languages OPC PvT LTD
+      link: #'https://www.verbolabs.com/'
       tags: 
-      date: nov 2022 - actualidad 
-      role: Traductor y revisor de lenguas romances
-      location: Remoto
-      description: |
-        Servicios de los idiomas español, francés e italiano para compañías de la India y otros
-        países del continente asiático  
+      date: #nov 2022 - actualidad 
+      role: #Traductor y revisor de lenguas romances
+      location: #Remoto
+      description: #|
+        #Servicios de los idiomas español, francés e italiano para compañías de la India y otros
+        #países del continente asiático  
 
     - company: Jaap van Adelberg Dievelaar Traductor e Intérprete público 
       link:
@@ -114,7 +114,7 @@ experience:
 project:
   show: true
   order: 3
-  title: Projects
+  title: Proyectos
   description: #|
     #The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
 
