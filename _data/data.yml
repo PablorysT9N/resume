@@ -74,7 +74,7 @@ experience:
       tags: 
       date: 2018 - actualidad
       role: Traductor y revisor
-      location:
+      location: Venezuela
       description: |
         Servios a empresas e individuos cuyos proyectos quieren hacer llegar al público de habla hispana,
         proyectos de distintos temas como: literal, legal, y software y computadoras.
@@ -82,7 +82,7 @@ experience:
 
     - company: Clearly Local, Ltd.
       link: 'https://www.clearlyloc.com/'
-      #tags:
+      tags: Español
       date: dic 2023 - actualidad 
       role: Revisor y editor de español
       location: Remoto
@@ -90,15 +90,15 @@ experience:
         Pocisionamiento, optimización y corrección de los elementos TDK para artículos publicados en sitios web especializados
         en el comercio B2B 
 
-    - company: #Verbolabs Languages OPC PvT LTD
-      link: #'https://www.verbolabs.com/'
+    - company: Verbolabs Languages OPC PvT LTD
+      link: 'https://www.verbolabs.com/'
       tags: 
-      date: #nov 2022 - actualidad 
-      role: #Traductor y revisor de lenguas romances
-      location: #Remoto
-      description: #|
-        #Servicios de los idiomas español, francés e italiano para compañías de la India y otros
-        #países del continente asiático  
+      date: nov 2022 - jul 2023 
+      role: Traductor y revisor de lenguas romances
+      location: Remoto
+      description: |
+        Servicios de los idiomas español, francés e italiano para compañías de la India y otros
+        países del continente asiático  
 
     - company: Jaap van Adelberg Dievelaar Traductor e Intérprete público 
       link:
