@@ -37,11 +37,6 @@ section_background: false   # section title backound, 'true' or 'false'
 skill_level_icon: circle # skill rate icon, 'heart', 'star', 'circle' or 'lightbulb'
 link_icon: true             # show link icon, 'true' or 'false'
 site_footer: false           # show site footer, 'true' or 'false'
-favicon: true
-
-defaults:
- - scope:
-      path: assets/favicons
 
 plugins:
   - jekyll-seo-tag
