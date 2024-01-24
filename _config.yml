@@ -41,3 +41,6 @@ site_footer: false           # show site footer, 'true' or 'false'
 defaults:
  - scope:
       path: assets/favicons
+
+plugins:
+  - jekyll-seo-tag
