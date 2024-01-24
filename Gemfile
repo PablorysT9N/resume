@@ -11,5 +11,5 @@ gem "jekyll"
 
 gem "webrick", group: :development
 
-group :jekyll_plugins do
-    gem "jekyll-seo-tag", "~> 1.5"
+
+gem "jekyll-seo-tag", "~> 1.5"
