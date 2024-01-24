@@ -1,13 +1,13 @@
 basic:
   name: Pablo Reyes                      # name
-  title: Translator | Localizer | IT | Software           # job title
+  title: Traductor | Localizador | TI | Software | Español          # job title
   avatar:
     show: false                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
   # meta
-  location: Quebec # location
+  location: # location
   email: pabloryst9n@gmail.com    # email address
   phone: +1 438 833 1642 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
   website:      # site URL without schema, like example.com, will automatically prepand "https://"
