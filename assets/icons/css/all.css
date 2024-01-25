@@ -63,4 +63,7 @@
   content: "\e90d";
 }
 
-.icon-p
+.icon-p}
+.icon-proz:before {
+  content: "\e90e";
+}
