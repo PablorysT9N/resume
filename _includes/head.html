@@ -3,6 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{% if site.open %}{% if site.description %}{{ site.description }}{% else %}{{ site.title }}{% endif %}{% else %}Online Resume{% endif %}">
 
+{% Seo %}
+
 {%- if site.open and site.open_graph.enable %}
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:type" content="profile">
