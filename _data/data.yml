@@ -123,14 +123,14 @@ project:
     #The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
 
   items:
-    - name: Personal project
-      link: '#'
-      tags:
-      date: 2015 - 2017
+    - name: Timoteo y la esfinge (Spanish Edition)
+      link: 'https://www.amazon.com/dp/B07CYLF12Z/ref=tsm_1_fb_lk'
+      tags: literal
+      date: May, 2018
       description: |
-        Personal project description...
-        + First
-        + Second
+        Traducción de novela corta ambientada en la Grecia antigua del escritor francés, Patrice Martinez.
+        + French - Spanish
+        + WC : 841
 
     - name: OSS project
       link:
