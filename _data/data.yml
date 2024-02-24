@@ -210,6 +210,20 @@ education:
 
   items:
 
+
+    - institution: Example University
+      link: 'https://www.institutotraduccion.com/'
+      date: 2023 - 2024
+      major: Traducción y Localización de Videojuegos
+      degree: Master
+      description: |
+        Formación detallada y específica en las técnicas de traducción y localización de videojuegos, 
+        en lo relativo tanto a la fase de traducción como a la del manejo de las herramientas de software más importantes.
+        + Español - Inglés
+        + Testeo
+        + Subtitulación y doblaje
+        + Gestión de proyectos
+
     - institution: Universidad de Margarita
       link: 'https://portalunimar.unimar.edu.ve/'
       date: 2015 - 2019
