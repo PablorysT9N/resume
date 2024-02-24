@@ -212,7 +212,7 @@ education:
     #   In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
 
   items:
-    - institution: Instituto Superior de Estudios Lingüísticos y Traducción
+    - institution: Instituto Superior de Estudios Linguísticos y Traducción
       link: 'https://www.institutotraduccion.com/'
       date: 2023 - 2024
       major: Traducción y Localización de Videojuegos
