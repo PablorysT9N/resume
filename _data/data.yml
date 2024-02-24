@@ -111,8 +111,9 @@ experience:
         + Gestión de proyecto
         + Gestión de base de datos
         + Procesamiento de documentos
+
 project:
-  show: true
+  show: false
   order: 3
   title: Proyectos
   description: Proyectos en los que he iniciado su traducción desde cero o desde sus versiones más recientes.
@@ -208,7 +209,7 @@ skill:
         - Skill I
 
 education:
-  show: true
+  show: false
   order: 5
   title: Educación
   description: | #
@@ -242,7 +243,7 @@ education:
         + Traducción cintífica, literaria y jurídica
 
 certificate:
-  show: true
+  show: false
   order: 6
   title: Certificados
   description: #|
