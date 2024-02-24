@@ -126,11 +126,11 @@ project:
     - name: Timoteo y la esfinge (Spanish Edition)
       link: 'https://www.amazon.com/dp/B07CYLF12Z/ref=tsm_1_fb_lk'
       tags: literal
-      date: May, 2018
+      date: mayo, 2018
       description: |
         Traducción de novela corta ambientada en la Grecia antigua del escritor francés, Patrice Martinez.
-        + French - Spanish
-        + WC : 841
+        + Francés - Español
+        + Palabras : 1654
 
     - name: OSS project
       link:
