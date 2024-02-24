@@ -112,7 +112,7 @@ experience:
         + Procesamiento de documentos
 
 project:
-  show: false
+  show: true
   order: 3
   title: Proyectos
   description: Proyectos en los que he iniciado su traducción desde cero o desde sus versiones más recientes.
