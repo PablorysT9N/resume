@@ -60,7 +60,6 @@ profile:
     El español internacional es mi especialidad, de igual manera, poseo otras habilidades lingüisticas que me permiten tener una percepción general y no limitativa a un solo idioma.
     Me considero autodidacta, motivado a mi inquietud de seguir aprendiendo y mantener el paso con las novedades que día a día surgen.
    
-
 experience:
   show: true
   order: 2
@@ -116,9 +115,7 @@ project:
   show: false
   order: 3
   title: Proyectos
-  description: 
-      Proyectos en los que he iniciado su traducción desde cero o desde sus versiones más recientes.
-
+  description: Proyectos en los que he iniciado su traducción desde cero o desde sus versiones más recientes.
       Destaco la versatilidad tanto en proyectos de tecnología y computación como algo más clásico como una novela literaria.
 
       #The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
@@ -154,7 +151,6 @@ project:
         Traducción de novela corta ambientada en la Grecia antigua del escritor francés, Patrice Martinez.
         + Francés - Español
         + Palabras : 1654
-
 
 skill:
   show: false
@@ -323,33 +319,9 @@ award:
       description: |
         It's my Example Awared Two by Example.
 
-patent:
-  show: false
-  order: 9
-  title: Patents
-  description: |
-    The patent section in a resume is a dedicated section where you can showcase any patents that you have been granted or are in the process of obtaining. This section is particularly relevant for individuals who work in scientific or technical fields, as well as for individuals who have developed innovative products or technologies.
-
-    In this section, you should list the title of the patent, the name of the inventors, the patent number, and the date it was granted. If the patent is pending, you can indicate that it is "pending" or "in review." You may also want to provide a brief description of the technology or invention that the patent covers.
-
-    Including a patent section in your resume can help demonstrate your expertise and accomplishments in your field, and can help you stand out from other candidates. However, if you do not have any patents to list, it is not necessary to include this section in your resume.
-
-    Template for a pending patent:
-
-    + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date]. Patent pending.
-
-    Template for an approved patent:
-
-    + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date], [Received Date].
-
-    The following are some examples of patent formats.
-
-    + Foo Bar. 2022. Example patent name one. US 123456, filed Oct 3, 2022. Patent pending.
-    + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
-
 organization:
-  show: false
-  order: 11
+  show: true
+  order: 10
   title: Organizaciones
   description: #|
     # The organization section in a resume, specifically for social contexts, is a section where you can showcase any relevant involvement or leadership positions in social, cultural, or community organizations. This section can highlight your commitment to social causes and your ability to work collaboratively with others towards a common goal.
@@ -360,7 +332,7 @@ organization:
 
 language:
   show: true
-  order: 10
+  order: 11
   title: Idiomas
   description: |
   #  The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
