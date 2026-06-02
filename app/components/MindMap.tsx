@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import type { MindMapDef, MMNode } from "../data/mindmaps";
+import { EASE_IN_OUT, EASE_OUT, spring, dur } from "../lib/motion";
 
-/* Draw a smooth cubic-bezier path from parent to child */
+/* Draw a smooth path from parent to child */
 function CurvedLine({ from, to, color }: { from: MMNode; to: MMNode; color: string }) {
+  const shouldReduce = useReducedMotion();
   const mx = (from.x + to.x) / 2;
-  const my = (from.y + to.y) / 2;
-  const d = `M ${from.x} ${from.y} Q ${mx} ${from.y} ${to.x} ${to.y}`;
+  const d  = `M ${from.x} ${from.y} Q ${mx} ${from.y} ${to.x} ${to.y}`;
   return (
     <motion.path
       d={d}
@@ -17,7 +18,10 @@ function CurvedLine({ from, to, color }: { from: MMNode; to: MMNode; color: stri
       strokeOpacity={0.55}
       initial={{ pathLength: 0, opacity: 0 }}
       animate={{ pathLength: 1, opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.1 }}
+      /* SVG path draw is decorative → can be longer */
+      transition={shouldReduce
+        ? { duration: 0.01 }
+        : { duration: dur.path, delay: 0.08, ease: EASE_IN_OUT }}
     />
   );
 }
@@ -31,9 +35,10 @@ function Node({ node, onClick, selected }: { node: MMNode; onClick: () => void; 
       <motion.g
         className="mm-node"
         onClick={onClick}
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 300, delay: 0 }}
+        /* scale(0.85) not scale(0): nothing appears from nothing */
+        initial={{ scale: 0.85, opacity: 0 }}
+        animate={{ scale: 1,    opacity: 1 }}
+        transition={{ ...spring.gentle, delay: 0 }}
       >
         {/* Glow ring */}
         <circle cx={node.x} cy={node.y} r={node.r + 10} fill="rgba(220,38,38,0.12)" />
@@ -69,9 +74,9 @@ function Node({ node, onClick, selected }: { node: MMNode; onClick: () => void; 
       <motion.g
         className="mm-node"
         onClick={onClick}
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 260, delay: 0.2 }}
+        initial={{ scale: 0.88, opacity: 0 }}
+        animate={{ scale: 1,    opacity: 1 }}
+        transition={{ ...spring.snappy, delay: 0.18 }}
       >
         <rect
           x={node.x - w / 2} y={node.y - h / 2} width={w} height={h} rx={10}
@@ -97,9 +102,9 @@ function Node({ node, onClick, selected }: { node: MMNode; onClick: () => void; 
     <motion.g
       className="mm-node"
       onClick={onClick}
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 240, delay: 0.35 }}
+      initial={{ scale: 0.92, opacity: 0 }}
+      animate={{ scale: 1,    opacity: 1 }}
+      transition={{ ...spring.stiff, delay: 0.32 }}
     >
       <rect
         x={node.x - w / 2} y={node.y - h / 2} width={w} height={h} rx={7}

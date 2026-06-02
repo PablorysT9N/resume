@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { EASE_OUT, spring, dur } from "../lib/motion";
 
 export type MCQ = { q: string; opts: string[]; a: number; exp: string };
 
@@ -27,7 +28,10 @@ export default function QuizMulti({ qs, color, icon }: { qs: MCQ[]; color: strin
   if (done) {
     const p = Math.round((score / qs.length) * 100);
     return (
-      <motion.div initial={{ scale: .9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
+      <motion.div
+        initial={{ opacity: 0, transform: "scale(0.94)" }}
+        animate={{ opacity: 1, transform: "scale(1)" }}
+        transition={spring.gentle}
         className="glass p-6 text-center">
         <div className="text-5xl mb-3">{p >= 80 ? "🏆" : p >= 60 ? "👍" : "📚"}</div>
         <div className="text-4xl font-black mb-1" style={{ color }}>{p}%</div>
@@ -55,8 +59,11 @@ export default function QuizMulti({ qs, color, icon }: { qs: MCQ[]; color: strin
 
       <AnimatePresence mode="wait">
         <motion.div key={cur}
-          initial={{ opacity:0, x:24 }} animate={{ opacity:1, x:0 }} exit={{ opacity:0, x:-24 }}
-          transition={{ duration:.2 }}>
+          /* use transform string → hardware accelerated (off main thread) */
+          initial={{ opacity:0, transform:"translateX(20px) scale(0.98)" }}
+          animate={{ opacity:1, transform:"translateX(0px) scale(1)" }}
+          exit={{    opacity:0, transform:"translateX(-16px) scale(0.99)" }}
+          transition={{ duration: dur.ui, ease: EASE_OUT }}>
           <div className="glass p-4 mb-3">
             <p className="font-semibold leading-snug">{q.q}</p>
           </div>
@@ -71,10 +78,17 @@ export default function QuizMulti({ qs, color, icon }: { qs: MCQ[]; color: strin
                 else extra = "opacity-40";
               }
               return (
-                <motion.button key={i} whileTap={{ scale:.97 }}
+                <motion.button key={i}
+                  whileTap={{ scale: 0.97 }}
+                  transition={spring.stiff}
                   onClick={() => pick(i)}
-                  className={`glass p-3.5 text-left border-2 rounded-[14px] transition-all ${extra}`}
-                  style={{ borderColor: "transparent" }}>
+                  className={`glass p-3.5 text-left border-2 rounded-[14px] ${extra}`}
+                  style={{
+                    borderColor: "transparent",
+                    /* specific props, never transition-all */
+                    transition: `background 0.18s cubic-bezier(0.23,1,0.32,1),
+                                 border-color 0.18s cubic-bezier(0.23,1,0.32,1)`,
+                  }}>
                   <span className="font-bold mr-2" style={{ color: sel !== null && isCorrect ? "var(--green)" : "var(--muted)" }}>
                     {String.fromCharCode(65+i)}.
                   </span>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { EASE_OUT, spring, dur } from "./lib/motion";
 import BottomNav, { type Tab } from "./components/BottomNav";
 import HomeScreen     from "./screens/HomeScreen";
 import EstudiarScreen from "./screens/EstudiarScreen";
@@ -43,10 +44,10 @@ export default function App() {
         <AnimatePresence mode="wait">
           <motion.div
             key={tab}
-            initial={{ opacity:0, y:12 }}
-            animate={{ opacity:1, y:0 }}
-            exit={{ opacity:0, y:-8 }}
-            transition={{ duration:.2 }}
+            initial={{ opacity:0, transform:"translateY(10px) scale(0.99)" }}
+            animate={{ opacity:1, transform:"translateY(0px) scale(1)" }}
+            exit={{    opacity:0, transform:"translateY(-6px) scale(1)" }}
+            transition={{ duration: dur.ui, ease: EASE_OUT }}
           >
             {screens[tab]}
           </motion.div>

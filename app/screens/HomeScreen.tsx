@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { spring, staggerContainer, staggerItem, EASE_OUT } from "../lib/motion";
 import type { Tab } from "../components/BottomNav";
 
 const stats = [
@@ -75,14 +76,19 @@ export default function HomeScreen({ onNav }: { onNav: (t: Tab) => void }) {
         50 preguntas tipo test (25 España + 25 Brasil) · Prueba práctica Word/Excel · Entrevista personal
       </div>
 
-      {/* Quick access grid */}
+      {/* Quick access grid — staggered with Emil's 40ms sweet spot */}
       <h2 className="font-bold text-sm mb-3" style={{ color:"var(--muted)" }}>ACCESO RÁPIDO</h2>
-      <div className="grid grid-cols-2 gap-3">
-        {cards.map((c, i) => (
+      <motion.div
+        className="grid grid-cols-2 gap-3"
+        variants={staggerContainer}
+        initial="initial"
+        animate="animate"
+      >
+        {cards.map((c) => (
           <motion.button key={c.title}
-            initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }}
-            transition={{ delay:.1 + i*0.06 }}
-            whileTap={{ scale:.95 }}
+            variants={staggerItem}
+            transition={{ duration: 0.22, ease: EASE_OUT }}
+            whileTap={{ scale: 0.96 }}
             onClick={() => onNav(c.tab)}
             className="glass text-left p-4"
             style={{ borderColor:`${c.color}33` }}>
@@ -92,12 +98,14 @@ export default function HomeScreen({ onNav }: { onNav: (t: Tab) => void }) {
             <div className="mt-2 h-0.5 w-6 rounded" style={{ background:c.color }}/>
           </motion.button>
         ))}
-      </div>
+      </motion.div>
 
-      {/* CTA */}
+      {/* CTA — delay after stagger completes */}
       <motion.button
-        initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:.6 }}
-        whileTap={{ scale:.97 }}
+        initial={{ opacity:0, transform:"translateY(8px)" }}
+        animate={{ opacity:1, transform:"translateY(0)" }}
+        transition={{ delay: 0.38, duration: 0.22, ease: EASE_OUT }}
+        whileTap={{ scale: 0.97 }}
         onClick={() => onNav("tests")}
         className="w-full mt-4 py-4 rounded-2xl font-black text-white text-base"
         style={{ background:"linear-gradient(135deg, var(--red) 0%, #9b1c1c 100%)" }}>

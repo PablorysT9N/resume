@@ -26,10 +26,13 @@ export default function Bibliography() {
       <div className="flex gap-2 overflow-x-auto pb-2 mb-4" style={{ scrollbarWidth:"none" }}>
         {allCats.map(c => (
           <button key={c} onClick={() => setCat(c)}
-            className="flex-shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all"
-            style={cat === c
-              ? { background:"var(--red)", color:"#fff" }
-              : { background:"var(--bg2)", color:"var(--muted)" }}>
+            className="flex-shrink-0 px-3 py-1.5 rounded-xl text-xs font-semibold"
+            style={{
+              transition:"background 0.16s cubic-bezier(0.23,1,0.32,1), color 0.16s cubic-bezier(0.23,1,0.32,1)",
+              ...(cat === c
+                ? { background:"var(--red)", color:"#fff" }
+                : { background:"var(--bg2)", color:"var(--muted)" }),
+            }}>
             {c}
           </button>
         ))}
