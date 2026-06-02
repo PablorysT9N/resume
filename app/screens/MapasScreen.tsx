@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { spring } from "../lib/motion";
 import MindMap from "../components/MindMap";
 import { allMindMaps } from "../data/mindmaps";
 
@@ -20,10 +21,13 @@ export default function MapasScreen() {
         {allMindMaps.map(m => (
           <button key={m.id}
             onClick={() => setActive(prev => prev === m.id ? null : m.id)}
-            className="flex-1 py-3 rounded-xl font-bold text-sm transition-all"
-            style={active === m.id
-              ? { background:"var(--red)", color:"#fff" }
-              : { background:"var(--bg2)", color:"var(--muted)" }}>
+            className="flex-1 py-3 rounded-xl font-bold text-sm"
+            style={{
+              transition:"background 0.18s cubic-bezier(0.23,1,0.32,1), color 0.18s cubic-bezier(0.23,1,0.32,1)",
+              ...(active === m.id
+                ? { background:"var(--red)", color:"#fff" }
+                : { background:"var(--bg2)", color:"var(--muted)" }),
+            }}>
             {m.icon}<br/>
             <span className="text-xs font-normal">{m.title.replace(/^.\s/,"")}</span>
           </button>

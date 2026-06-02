@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { EASE_OUT, spring, dur } from "../lib/motion";
 
 export type TFQ = { q: string; a: boolean; exp: string };
 
@@ -33,7 +34,10 @@ export default function QuizTF({ qs, color }: { qs: TFQ[]; color: string }) {
   if (done) {
     const p = Math.round((score / qs.length) * 100);
     return (
-      <motion.div initial={{ scale:.9, opacity:0 }} animate={{ scale:1, opacity:1 }}
+      <motion.div
+        initial={{ opacity:0, transform:"scale(0.94)" }}
+        animate={{ opacity:1, transform:"scale(1)" }}
+        transition={spring.gentle}
         className="glass p-6 text-center">
         <div className="text-5xl mb-3">{p >= 80 ? "🔥" : p >= 60 ? "👍" : "📚"}</div>
         <div className="text-4xl font-black mb-1" style={{ color }}>{p}%</div>
@@ -53,7 +57,10 @@ export default function QuizTF({ qs, color }: { qs: TFQ[]; color: string }) {
           ✅ {cur + 1}/{qs.length}
         </span>
         {streak >= 2 && (
-          <motion.span initial={{ scale:0 }} animate={{ scale:1 }}
+          <motion.span
+            initial={{ opacity:0, transform:"scale(0.9)" }}
+            animate={{ opacity:1, transform:"scale(1)" }}
+            transition={spring.snappy}
             className="chip" style={{ background:"rgba(251,191,36,0.2)", color:"#fbbf24" }}>
             🔥 {streak} seguidas
           </motion.span>
@@ -66,8 +73,10 @@ export default function QuizTF({ qs, color }: { qs: TFQ[]; color: string }) {
 
       <AnimatePresence mode="wait">
         <motion.div key={cur}
-          initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} exit={{ opacity:0, y:-16 }}
-          transition={{ duration:.22 }}>
+          initial={{ opacity:0, transform:"translateY(14px) scale(0.98)" }}
+          animate={{ opacity:1, transform:"translateY(0px) scale(1)" }}
+          exit={{    opacity:0, transform:"translateY(-10px) scale(0.99)" }}
+          transition={{ duration: dur.ui, ease: EASE_OUT }}>
           <div className="glass p-5 mb-5 min-h-[100px] flex items-center justify-center">
             <p className="font-semibold text-base text-center leading-snug">{q.q}</p>
           </div>
@@ -88,10 +97,16 @@ export default function QuizTF({ qs, color }: { qs: TFQ[]; color: string }) {
               }
               return (
                 <motion.button key={String(opt.val)}
-                  whileTap={{ scale:.94 }}
+                  whileTap={{ scale: 0.96 }}
+                  transition={spring.stiff}
                   onClick={() => pick(opt.val)}
-                  className="py-5 rounded-2xl flex flex-col items-center gap-1 font-bold text-sm border-2 transition-all"
-                  style={{ background:bg, borderColor:border, color: sel !== null && isAnswer ? "var(--green)" : "var(--text)" }}>
+                  className="py-5 rounded-2xl flex flex-col items-center gap-1 font-bold text-sm border-2"
+                  style={{
+                    background:bg, borderColor:border,
+                    color: sel !== null && isAnswer ? "var(--green)" : "var(--text)",
+                    transition: `background 0.18s cubic-bezier(0.23,1,0.32,1),
+                                 border-color 0.18s cubic-bezier(0.23,1,0.32,1)`,
+                  }}>
                   <span className="text-2xl">{opt.icon}</span>
                   {opt.label}
                 </motion.button>

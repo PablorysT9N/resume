@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { spring } from "../lib/motion";
 
 export type Tab = "home"|"estudiar"|"mapas"|"tests"|"mas";
 
@@ -29,7 +30,7 @@ export default function BottomNav({ active, onChange }: { active: Tab; onChange:
                   layoutId="nav-pill"
                   className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-0.5 rounded-full"
                   style={{ background: "var(--red)" }}
-                  transition={{ type:"spring", stiffness:400, damping:30 }}
+                  transition={spring.snappy}
                 />
               )}
               <span className="text-xl leading-none">{t.icon}</span>
